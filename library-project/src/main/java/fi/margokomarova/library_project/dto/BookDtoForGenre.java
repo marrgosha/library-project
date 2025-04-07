@@ -13,9 +13,8 @@ import java.util.Set;
 @AllArgsConstructor
 @Data
 @Builder
-public class BookDto {
+public class BookDtoForGenre {
     private Long id;
     private String name;
-    private String genre;
-
+    private List<AuthorResponseDto> authors;
 }

@@ -1,21 +1,16 @@
 package fi.margokomarova.library_project.dto;
 
-import fi.margokomarova.library_project.model.Author;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.List;
-import java.util.Set;
-
-@NoArgsConstructor
 @AllArgsConstructor
+@NoArgsConstructor
 @Data
 @Builder
-public class BookDto {
+public class AuthorResponseDto {
     private Long id;
     private String name;
-    private String genre;
-
+    private String surname;
 }

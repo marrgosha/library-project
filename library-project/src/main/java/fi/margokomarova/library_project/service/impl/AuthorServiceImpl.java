@@ -21,7 +21,6 @@ public class AuthorServiceImpl implements AuthorService {
         Author author=authorRepository.findById(id).orElseThrow();
         AuthorDto authorDto=convertEntityToDto(author);
         return authorDto;
-
     }
 
     private AuthorDto convertEntityToDto(Author author) {
